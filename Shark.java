@@ -4,18 +4,14 @@
 public class Shark extends Fish {
     int sizeOfShark;
 
-    public Shark() {
 
-    }
-
-    public Shark(int sizeOfShark, String type, String eats, boolean vegetarian) {
+    public Shark(int sizeOfShark) {
+        super("Shark",false,"Fish, meat, hoomans");
         this.sizeOfShark = sizeOfShark;
-        this.type = type;
-        this.eats = eats;
-        this.vegetarian = vegetarian;
     }
 
     String getSharkProperties() {
         return "Size = " + sizeOfShark + " , type = " + type + " , eats " + eats + " , vegetarian = " + vegetarian;
     }
+
 }

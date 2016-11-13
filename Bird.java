@@ -4,7 +4,11 @@
 public class Bird extends Animal {
     String type;
 
-    public Bird() {
-
+    Bird(boolean vegetarian, String eats, String type) {
+        super(vegetarian, eats, 2);
+        this.vegetarian = vegetarian;
+        this.eats = eats;
+        this.type = type;
     }
+
 }

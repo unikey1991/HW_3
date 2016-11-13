@@ -14,17 +14,20 @@ public class Main {
         System.out.println(a3.getAmount());
         System.out.println(a3.getId());
 
-        Shark ak1 = new Shark(10,"White","hoomans",false);
+        Shark shark1 = new Shark(10);
         System.out.println("Shark ak1:");
-        System.out.println(ak1.getSharkProperties());
+        System.out.println(shark1.getSharkProperties());
 
-        Eagle eagle1 = new Eagle(2000,false,"rats",2,"Aquila rapax");
+        Eagle eagle1 = new Eagle(2000);
         System.out.println("Eagle eagle1:");
         System.out.println(eagle1.getEagleProperties());
 
-        Cow cow1 = new Cow(4,"grass",true,true);
+        Cow cow1 = new Cow(true);
         System.out.println("Cow cow1:");
         System.out.println(cow1.getCowProperties());
+
+        Fish herring = new Fish("herring",true,"seaweed");
+        System.out.println(herring.isVegetarian());
 
 
     }

@@ -5,16 +5,9 @@ public class Eagle extends Bird {
     int rangeOfFlight;
     boolean plumage = true;
 
-    public Eagle() {
-
-    }
-
-    public Eagle(int rangeOfFlight, boolean vegetarian, String eats, int noOfLegs, String type) {
-        this.vegetarian = vegetarian;
-        this.eats = eats;
-        this.noOfLegs = noOfLegs;
+    Eagle (int rangeOfFlight){
+        super(false,"meat","Eagle");
         this.rangeOfFlight = rangeOfFlight;
-        this.type = type;
     }
 
     String getEagleProperties() {

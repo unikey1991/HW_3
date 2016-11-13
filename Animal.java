@@ -6,11 +6,8 @@ public class Animal {
     String eats;
     int noOfLegs;
 
-    public Animal(){
 
-    }
-
-    public Animal(boolean vegetarian, String eats, int noOfLegs) {
+    Animal(boolean vegetarian, String eats, int noOfLegs) {
         this.vegetarian = vegetarian;
         this.eats = eats;
         this.noOfLegs = noOfLegs;

@@ -5,18 +5,12 @@ public class Cow extends Mammal {
     boolean hoof = true;
     boolean givesMilk;
 
-    public Cow() {
-
-    }
-
-    public Cow(int noOfLegs, String eats, boolean vegetarian, boolean givesMilk) {
-        this.noOfLegs = noOfLegs;
-        this.eats = eats;
-        this.vegetarian = vegetarian;
+    public Cow(boolean givesMilk){
+        super("Cow");
         this.givesMilk = givesMilk;
     }
 
     String getCowProperties() {
-        return "hoof = " + hoof + " , gives milk = " + givesMilk + " number of legs = " + noOfLegs + " , eats = " + eats + " , vegetarian = " + vegetarian;
+        return "hoof = " + hoof + " , gives milk = " + givesMilk + " , number of legs = " + noOfLegs + " , eats = " + eats + " , vegetarian = " + vegetarian;
     }
 }

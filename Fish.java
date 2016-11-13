@@ -4,14 +4,13 @@
 public class Fish extends Animal {
     String type;
 
-    public Fish() {
-    }
 
-    public Fish(boolean vegetarian, String eats, String type) {
+    Fish(String type, boolean vegetarian, String eats) {
+        super(vegetarian, eats, 0);
+        this.type = type;
         this.vegetarian = vegetarian;
         this.eats = eats;
-        this.noOfLegs = 0;
-        this.type = type;
     }
+
 
 }
